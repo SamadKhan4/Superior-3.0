@@ -192,12 +192,12 @@ function MobileList() {
       <ul>
         {products.map((product) =>
         <li key={product.id} className="border-t border-metal/12">
-            <article className="px-6 py-10">
-              <div className="flex items-baseline gap-3">
+            <article className="px-5 py-10 sm:px-6">
+              <div className="flex min-w-0 items-baseline gap-3">
                 <span className="font-mono text-[11px] text-molten">
                   {product.number}
                 </span>
-                <h3 className="font-display text-[26px] font-semibold uppercase leading-[1.05] tracking-tightest text-chalk">
+                <h3 className="min-w-0 break-words font-display text-[clamp(1.35rem,7vw,1.625rem)] font-semibold uppercase leading-[1.05] tracking-tightest text-chalk">
                   {product.name}
                 </h3>
               </div>

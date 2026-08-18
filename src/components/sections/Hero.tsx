@@ -41,7 +41,7 @@ export function Hero({ ready }: HeroProps) {
     <section
       ref={ref}
       id="top"
-      className="relative flex h-[88vh] min-h-[620px] w-full flex-col justify-end overflow-hidden bg-ink lg:h-screen">
+      className="relative flex min-h-[100svh] w-full flex-col justify-end overflow-hidden bg-ink pt-32 sm:min-h-[620px] lg:h-screen lg:pt-0">
       
       {/* Background photograph, revealed through a vertical mask */}
       <motion.div
@@ -80,7 +80,7 @@ export function Hero({ ready }: HeroProps) {
       </div>
 
       <motion.div
-        className="relative z-10 mx-auto w-full max-w-shell px-6 pb-10 lg:px-10 lg:pb-14"
+        className="relative z-10 mx-auto w-full max-w-shell px-5 pb-8 sm:px-6 sm:pb-10 lg:px-10 lg:pb-14"
         style={reduce ? undefined : { y: contentY }}>
         
         <motion.p
@@ -128,7 +128,7 @@ export function Hero({ ready }: HeroProps) {
         </motion.p>
 
         <motion.div
-          className="mt-9 flex flex-wrap gap-3"
+          className="mt-9 flex flex-col items-start gap-3 min-[420px]:flex-row min-[420px]:flex-wrap"
           initial="hidden"
           animate={show ? 'visible' : 'hidden'}
           variants={{
@@ -160,7 +160,7 @@ export function Hero({ ready }: HeroProps) {
         </motion.div>
 
         <motion.dl
-          className="mt-12 grid grid-cols-1 gap-y-6 border-t border-metal/15 pt-8 sm:grid-cols-3 lg:mt-16"
+          className="mt-10 grid grid-cols-1 gap-y-5 border-t border-metal/15 pt-6 min-[480px]:grid-cols-3 sm:mt-12 sm:gap-x-4 sm:pt-8 lg:mt-16"
           initial={{ opacity: 0 }}
           animate={show ? { opacity: 1 } : undefined}
           transition={{ duration: 0.7, ease: EASE, delay: 1 }}>

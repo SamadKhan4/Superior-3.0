@@ -13,7 +13,7 @@ type ButtonProps = {
 };
 
 const base =
-'group relative inline-flex items-center justify-center gap-3 overflow-hidden px-7 py-4 font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:outline-offset-4';
+'group relative inline-flex max-w-full items-center justify-center gap-3 overflow-hidden px-6 py-4 text-center font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:outline-offset-4 sm:px-7';
 
 const variants: Record<string, string> = {
   primary: 'bg-molten text-ink hover:text-ink',

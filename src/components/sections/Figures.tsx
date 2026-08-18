@@ -20,7 +20,7 @@ export function Figures() {
         <h2 id="figures-heading" className="sr-only">
           Superior Weldmesh in numbers
         </h2>
-        <dl className="grid grid-cols-2 gap-y-12 py-16 lg:grid-cols-4 lg:py-24">
+        <dl className="grid grid-cols-1 gap-y-12 py-16 min-[400px]:grid-cols-2 lg:grid-cols-4 lg:py-24">
           {figures.map((figure, i) =>
           <FadeUp
             key={figure.label}

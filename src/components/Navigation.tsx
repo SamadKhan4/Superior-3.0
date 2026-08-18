@@ -37,7 +37,7 @@ export function Navigation() {
       onMouseLeave={() => setMegaOpen(false)}>
       
       <div
-        className={`mx-auto flex max-w-shell items-center justify-between px-6 transition-[padding] duration-300 ease-weld lg:px-10 ${
+        className={`mx-auto flex max-w-shell items-center justify-between px-5 transition-[padding] duration-300 ease-weld sm:px-6 lg:px-10 ${
         scrolled ? 'py-4' : 'py-6 lg:py-8'}`
         }>
         
@@ -169,7 +169,7 @@ export function Navigation() {
           exit={{ opacity: 0, y: reduce ? 0 : 16 }}
           transition={{ duration: 0.3, ease: EASE }}>
           
-            <div className="flex items-center justify-between px-6 py-6">
+            <div className="flex items-center justify-between px-5 py-5 sm:px-6 sm:py-6">
               <span className="font-display text-[22px] font-semibold text-chalk">
                 SWPL
               </span>
@@ -184,7 +184,7 @@ export function Navigation() {
             </div>
             <nav
             aria-label="Mobile"
-            className="flex-1 overflow-y-auto px-6 pb-10">
+            className="flex-1 overflow-y-auto px-5 pb-8 sm:px-6 sm:pb-10">
             
               <ul>
                 {navLinks.map((link) =>
@@ -192,7 +192,7 @@ export function Navigation() {
                     <a
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="block py-5 font-display text-[30px] uppercase tracking-tightest text-chalk">
+                  className="block py-4 font-display text-[clamp(1.55rem,8vw,1.875rem)] uppercase tracking-tightest text-chalk sm:py-5">
                   
                       {link.label}
                     </a>

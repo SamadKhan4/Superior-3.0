@@ -104,7 +104,7 @@ export function WeightCalculator() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }} />
             
 
-            <div className="flex items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <MonoLabel tone="ink">Mesh Weight Estimator</MonoLabel>
               <MonoLabel>SWPL / Tool 01</MonoLabel>
             </div>
@@ -142,9 +142,9 @@ export function WeightCalculator() {
 
             <div className="mt-10 border-t border-ink/12 pt-8">
               <MonoLabel tone="ink">Estimated Weight</MonoLabel>
-              <p className="mt-3 font-display font-semibold leading-none tracking-tightest text-ink text-[clamp(2.5rem,6vw,3.75rem)]">
+              <p className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-2 font-display font-semibold leading-none tracking-tightest text-ink text-[clamp(2.25rem,10vw,3.75rem)]">
                 {result ? result.total.toFixed(1) : '—'}
-                <span className="ml-3 font-mono text-[13px] uppercase tracking-[0.2em] text-molten">
+                <span className="font-mono text-[13px] uppercase tracking-[0.2em] text-molten">
                   kg total
                 </span>
               </p>

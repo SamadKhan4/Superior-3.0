@@ -76,7 +76,7 @@ export function Quality() {
                 aria-expanded={active === i}
                 className="group w-full border-b border-ink/12 py-6 text-left">
                 
-                  <div className="flex items-baseline gap-5">
+                  <div className="flex items-baseline gap-3 sm:gap-5">
                     <span
                     className={`font-mono text-[11px] transition-colors duration-200 ${
                     active === i ? 'text-molten' : 'text-ink/35'}`
@@ -97,7 +97,7 @@ export function Quality() {
                   <AnimatePresence initial={false}>
                     {active === i &&
                   <motion.p
-                    className="max-w-lg overflow-hidden pl-10 text-[14px] leading-relaxed text-ink/60"
+                    className="max-w-lg overflow-hidden pl-7 text-[14px] leading-relaxed text-ink/60 sm:pl-10"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1, marginTop: 12 }}
                     exit={{ height: 0, opacity: 0, marginTop: 0 }}

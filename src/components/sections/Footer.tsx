@@ -32,7 +32,7 @@ export function Footer() {
   return (
     <footer className="relative w-full overflow-hidden border-t border-metal/15 bg-ink">
       <div className="relative mx-auto max-w-shell px-6 pt-20 lg:px-10 lg:pt-24">
-        <div className="grid grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-12 min-[400px]:grid-cols-2 md:grid-cols-4">
           {COLUMNS.map((column) =>
           <div key={column.title}>
               <h3 className="font-mono text-[10px] uppercase tracking-[0.22em] text-molten">

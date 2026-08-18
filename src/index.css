@@ -18,12 +18,36 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 body {
+  min-width: 280px;
   width: 100%;
+  overflow-x: clip;
   background-color: var(--ink);
   color: #f5f5f2;
   font-family: Inter, system-ui, sans-serif;
+}
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+/* Prevent grid and flex children with long technical copy from widening pages. */
+#root,
+main,
+section,
+header,
+footer {
+  min-width: 0;
+}
+
+@media (max-width: 374px) {
+  .mesh-grid,
+  .mesh-grid-light {
+    background-size: 40px 40px;
+  }
 }
 ::selection {
   background: var(--molten);
