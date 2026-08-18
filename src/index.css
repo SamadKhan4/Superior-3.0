@@ -1,0 +1,120 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --ink: #0b0e10;
+  --graphite: #151a1e;
+  --bone: #f2f1ec;
+  --steel: #90999f;
+  --molten: #f47b20;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  width: 100%;
+  background-color: var(--ink);
+  color: #f5f5f2;
+  font-family: Inter, system-ui, sans-serif;
+}
+::selection {
+  background: var(--molten);
+  color: var(--ink);
+}
+:focus-visible {
+  outline: 2px solid var(--molten);
+  outline-offset: 3px;
+}
+/* Mesh geometry: 1px welded grid, used as a subtle structural texture */
+.mesh-grid {
+  background-image: linear-gradient(
+      to right,
+      rgba(171, 178, 183, 0.13) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(171, 178, 183, 0.13) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.mesh-grid-dense {
+  background-image: linear-gradient(
+      to right,
+      rgba(171, 178, 183, 0.16) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(171, 178, 183, 0.16) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.mesh-grid-light {
+  background-image: linear-gradient(
+      to right,
+      rgba(11, 14, 16, 0.09) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(11, 14, 16, 0.09) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.mask-fade-x {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+@keyframes marquee-left {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes marquee-right {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate-marquee-left {
+  animation: marquee-left 44s linear infinite;
+}
+.animate-marquee-right {
+  animation: marquee-right 60s linear infinite;
+}
+.no-native-cursor,
+.no-native-cursor a,
+.no-native-cursor button {
+  cursor: none;
+}
+.no-native-cursor input,
+.no-native-cursor textarea,
+.no-native-cursor select {
+  cursor: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee-left,
+  .animate-marquee-right {
+    animation: none;
+  }
+}
