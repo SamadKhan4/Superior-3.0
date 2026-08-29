@@ -24,7 +24,7 @@ function Navigation() {
   }, [mobileOpen]);
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-300 ease-weld ${scrolled || megaOpen ? 'border-b border-metal/15 bg-ink/85 backdrop-blur-md' : 'border-b border-transparent bg-transparent'}`}
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-300 ease-weld ${scrolled || megaOpen ? `border-b border-metal/15 bg-ink/85 ${mobileOpen ? '' : 'backdrop-blur-md'}` : 'border-b border-transparent bg-transparent'}`}
       onMouseLeave={() => setMegaOpen(false)}
     >
       <div
