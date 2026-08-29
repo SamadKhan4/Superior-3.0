@@ -1,28 +1,40 @@
 const COLUMNS = [
   {
-    title: 'Company',
-    links: ['About', 'Quality', 'Certifications', 'Applications', 'Contact'],
-  },
-  {
-    title: 'Products',
+    title: 'Our products',
     links: [
-      'Welded Wire Mesh',
-      'V-Bend Fence',
-      'Anti-Climb Fence',
-      'Gabion Weldmesh',
-      'TMT Weld Mesh',
-      'Chain Link',
-      'Security Wire',
-      'Barricades',
+      ['Weldmesh', '/products/welded-wire-mesh'],
+      ['Chain Link', '/products/chain-link-fence'],
+      ['Barbed Wires', '/products/barbed-wire'],
+      ['Gabion Weldmesh', '/products/gabion-weldmesh'],
+      ['Concertina', '/products/concertina-razor-wire'],
+      ['V Bend Fence', '/products/v-bend-fence'],
+      ['Anti Climb Fence', '/products/anti-climb-fence'],
+      ['Rebar / TMT Weld Mesh', '/products/rebar-tmt-weld-mesh'],
+      ['Temporary Barricades', '/products/temporary-barricades'],
     ],
   },
   {
-    title: 'Tools',
-    links: ['Weight Calculator', 'Standard Wire Gauge'],
+    title: 'Call',
+    links: [
+      ['(+91) 97642 70290', 'tel:+919764270290'],
+      ['(+91) 87665 06146', 'tel:+918766506146'],
+    ],
   },
   {
-    title: 'Connect',
-    links: ['Call', 'Email', 'Location'],
+    title: 'Write',
+    links: [
+      ['info@superiorweldmesh.com', 'mailto:info@superiorweldmesh.com'],
+      ['sales@superiorweldmesh.com', 'mailto:sales@superiorweldmesh.com'],
+    ],
+  },
+  {
+    title: 'Visit',
+    links: [
+      [
+        'Superior Weldmesh Private Limited, Plot No. 263, P.H. No. 27, Bhandara Road, Wadoda, Nagpur, Maharashtra 441104',
+        '/contact',
+      ],
+    ],
   },
 ];
 function Footer() {
@@ -36,13 +48,13 @@ function Footer() {
                 {column.title}
               </h3>
               <ul className="mt-5 space-y-2.5">
-                {column.links.map((link) => (
-                  <li key={link}>
+                {column.links.map(([label, href]) => (
+                  <li key={label}>
                     <a
-                      href="#top"
-                      className="text-[14px] text-chalk/60 transition-colors duration-200 hover:text-chalk"
+                      href={href}
+                      className="text-[14px] leading-relaxed text-chalk/60 transition-colors duration-200 hover:text-chalk"
                     >
-                      {link}
+                      {label}
                     </a>
                   </li>
                 ))}

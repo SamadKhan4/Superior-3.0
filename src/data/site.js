@@ -231,12 +231,12 @@ const siteImages = {
   inspection: '/a89d2d62-3260-4785-bac1-8ebd35cf6803.jpg',
 };
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Products', href: '#products' },
-  { label: 'Applications', href: '#applications' },
-  { label: 'Quality', href: '#quality' },
-  { label: 'Weight Calculator', href: '#calculator' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '/about' },
+  { label: 'Products', href: '/products' },
+  { label: 'Applications', href: '/applications' },
+  { label: 'Quality', href: '/#quality' },
+  { label: 'Weight Calculator', href: '/#calculator' },
+  { label: 'Contact', href: '/contact' },
 ];
 export {
   applications,

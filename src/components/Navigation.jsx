@@ -30,7 +30,7 @@ function Navigation() {
       <div
         className={`mx-auto flex max-w-shell items-center justify-between px-5 transition-[padding] duration-300 ease-weld sm:px-6 lg:px-10 ${scrolled ? 'py-4' : 'py-6 lg:py-8'}`}
       >
-        <a href="#top" aria-label="Superior Weldmesh home" className="block">
+        <a href="/" aria-label="Superior Weldmesh home" className="block">
           <img
             src="/logo-light.webp"
             alt="Superior Weldmesh"
@@ -61,7 +61,7 @@ function Navigation() {
         </nav>
         <div className="flex items-center gap-3">
           <a
-            href="#contact"
+            href="/contact"
             className="group relative hidden items-center gap-2 overflow-hidden bg-molten px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink sm:inline-flex"
           >
             <span className="absolute inset-0 origin-left scale-x-0 bg-bone transition-transform duration-300 ease-weld group-hover:scale-x-100" />
@@ -95,7 +95,7 @@ function Navigation() {
                   {products.map((product) => (
                     <li key={product.id}>
                       <a
-                        href="#products"
+                        href={`/products/${product.id}`}
                         className="group flex items-baseline gap-3 border-b border-metal/10 py-3"
                       >
                         <span className="font-mono text-[10px] text-molten">{product.number}</span>
@@ -176,7 +176,7 @@ function Navigation() {
                   {products.map((p) => (
                     <li key={p.id}>
                       <a
-                        href="#products"
+                        href={`/products/${p.id}`}
                         onClick={() => setMobileOpen(false)}
                         className="flex items-baseline gap-3 py-1 text-[15px] text-chalk/70"
                       >
@@ -188,7 +188,7 @@ function Navigation() {
                 </ul>
               </div>
               <a
-                href="#contact"
+                href="/contact"
                 onClick={() => setMobileOpen(false)}
                 className="mt-10 flex w-full items-center justify-center gap-2 bg-molten px-6 py-5 font-mono text-[12px] uppercase tracking-[0.18em] text-ink"
               >

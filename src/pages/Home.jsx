@@ -18,9 +18,12 @@ import { StatementMarquee } from '../components/sections/StatementMarquee';
 import { Testimonials } from '../components/sections/Testimonials';
 import { WeightCalculator } from '../components/sections/WeightCalculator';
 
-function ScrollOverlap({ children, layer }) {
+function ScrollOverlap({ children, layer, first = false }) {
   return (
-    <div className="relative -mt-6 sm:-mt-8 lg:-mt-12" style={{ zIndex: layer }}>
+    <div
+      className={`relative ${first ? '' : '-mt-6 sm:-mt-8 lg:-mt-12'}`}
+      style={{ zIndex: layer }}
+    >
       {children}
     </div>
   );
@@ -38,7 +41,9 @@ function Home() {
       <Cursor />
       <Navigation />
       <main>
-        <Hero ready={ready} />
+        <ScrollOverlap first layer={0}>
+          <Hero ready={ready} />
+        </ScrollOverlap>
         <ScrollOverlap layer={1}>
           <StatementMarquee />
         </ScrollOverlap>

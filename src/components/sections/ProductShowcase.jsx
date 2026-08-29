@@ -119,7 +119,7 @@ function DesktopStory() {
                   {product.spec}
                 </p>
                 <a
-                  href="#contact"
+                  href={`/products/${product.id}`}
                   className="group mt-8 inline-flex items-center gap-2 border-b border-metal/30 pb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-chalk transition-colors duration-200 hover:border-molten hover:text-molten"
                 >
                   Explore Product
@@ -198,7 +198,7 @@ function MobileList() {
                 {product.spec}
               </p>
               <a
-                href="#contact"
+                href={`/products/${product.id}`}
                 className="mt-6 inline-flex items-center gap-2 border-b border-metal/30 pb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-chalk"
               >
                 Explore Product <ArrowUpRightIcon className="h-4 w-4" />
