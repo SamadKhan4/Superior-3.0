@@ -234,7 +234,6 @@ const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Products', href: '/products' },
   { label: 'Applications', href: '/applications' },
-  { label: 'Quality', href: '/#quality' },
   { label: 'Weight Calculator', href: '/#calculator' },
   { label: 'Contact', href: '/contact' },
 ];
