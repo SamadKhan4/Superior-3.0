@@ -1,10 +1,10 @@
 const heroStats = [
-  { index: '01', label: 'Established', value: '2013' },
+  { index: '01', label: 'Established', value: '2011' },
   { index: '02', label: 'Customers', value: '600+' },
   { index: '03', label: 'Solutions', value: 'Custom Engineered' },
 ];
 const figures = [
-  { value: 2013, suffix: '', label: 'Founded', static: null },
+  { value: 2011, suffix: '', label: 'Established', static: null },
   { value: 600, suffix: '+', label: 'Satisfied Clients', static: null },
   { value: 20, suffix: '+', label: 'Professionals', static: null },
   { value: 0, suffix: '', label: 'Sizes & Specifications', static: 'Custom' },

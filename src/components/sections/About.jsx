@@ -45,9 +45,10 @@ function About() {
           <div className="mt-10 max-w-xl space-y-6 text-[16px] leading-relaxed text-ink/70">
             <FadeUp>
               <p>
-                Superior Weldmesh has been manufacturing engineered wire mesh and fencing solutions
-                since 2013, serving requirements across infrastructure, construction, architecture,
-                industrial and perimeter-security applications.
+                Established in 2011, Superior Weld Mesh Private Limited began its operating journey
+                in early 2013. Today, we manufacture engineered wire mesh and fencing solutions for
+                infrastructure, construction, architecture, industrial and perimeter-security
+                applications.
               </p>
             </FadeUp>
             <FadeUp delay={0.08}>
@@ -60,9 +61,8 @@ function About() {
             </FadeUp>
             <FadeUp delay={0.14}>
               <p>
-                That approach has built long-running relationships with contractors, exporters,
-                architects and industrial buyers who need a mesh supplier that executes reliably
-                rather than approximately.
+                Guided by integrity, trust, quality and reliability, we focus on building lasting
+                client relationships rather than purely commercial agreements.
               </p>
             </FadeUp>
           </div>

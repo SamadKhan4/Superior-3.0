@@ -1,5 +1,5 @@
 const STATS = [
-  ['400M+', 'Annual turnover'],
+  ['2011', 'Established'],
   ['600+', 'Satisfied clients'],
   ['20+', 'Professionals'],
   ['Custom', 'Sizes & specifications'],
@@ -20,14 +20,16 @@ function WhoWeAre() {
           </div>
           <div className="space-y-6 text-[16px] leading-relaxed text-ink/70 lg:col-span-6 lg:col-start-7">
             <p>
-              Superior Weldmesh Private Limited manufactures welded mesh, reinforcement and
+              Established in 2011, Superior Weld Mesh Private Limited began its operating journey in
+              early 2013. From Nagpur, Maharashtra, we manufacture welded mesh, reinforcement and
               perimeter-fencing systems for infrastructure, construction, security and industrial
               applications.
             </p>
             <p>
-              Every requirement starts with the right variables: aperture, wire diameter, panel
-              dimensions, coating and intended use. Our team uses those details to develop a product
-              that works for the project instead of forcing a one-size solution.
+              Competence, continuous development and integrity guide how we work. Every requirement
+              starts with the right variables: aperture, wire diameter, panel dimensions, coating
+              and intended use, helping us deliver a project-specific solution and build dependable,
+              long-term client relationships.
             </p>
           </div>
         </div>

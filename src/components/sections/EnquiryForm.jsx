@@ -32,7 +32,7 @@ function EnquiryForm() {
     <div id="contact" className="relative border border-metal/15 bg-graphite p-6 sm:p-10">
       <div className="flex items-center justify-between">
         <MonoLabel>/ Quick Enquiry</MonoLabel>
-        <MonoLabel tone="steel">SWPL / 2013</MonoLabel>
+        <MonoLabel tone="steel">SWPL / EST. 2011</MonoLabel>
       </div>
       <h3 className="mt-6 font-display text-[26px] font-medium uppercase leading-tight tracking-tight text-chalk sm:text-[30px]">
         Send your specification

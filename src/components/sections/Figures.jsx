@@ -7,7 +7,7 @@ function Figures() {
     <section className="relative w-full bg-bone pt-8 pb-0" aria-labelledby="figures-heading">
       <div className="mx-auto max-w-shell px-6 lg:px-10">
         <div className="flex items-center gap-4 border-t border-ink/10 pt-8">
-          <MonoLabel tone="ink">/ Since 2013</MonoLabel>
+          <MonoLabel tone="ink">/ Established 2011</MonoLabel>
           <span className="h-px flex-1 bg-ink/10" />
           <MonoLabel tone="ink">SWPL / Nagpur</MonoLabel>
         </div>
