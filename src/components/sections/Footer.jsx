@@ -10,7 +10,7 @@ const COLUMNS = [
       ['V Bend Fence', '/products/v-bend-fence'],
       ['Anti Climb Fence', '/products/anti-climb-fence'],
       ['Rebar / TMT Weld Mesh', '/products/rebar-tmt-weld-mesh'],
-      ['Temporary Barricades', '/products/temporary-barricades'],
+      ['Crowd Control Barricades', '/products/temporary-barricades'],
     ],
   },
   {
@@ -22,10 +22,7 @@ const COLUMNS = [
   },
   {
     title: 'Write',
-    links: [
-      ['info@superiorweldmesh.com', 'mailto:info@superiorweldmesh.com'],
-      ['sales@superiorweldmesh.com', 'mailto:sales@superiorweldmesh.com'],
-    ],
+    links: [['info@superiorweldmesh.com', 'mailto:info@superiorweldmesh.com']],
   },
   {
     title: 'Visit',
@@ -91,13 +88,19 @@ function Footer() {
             manufacturer &amp; exporter, India
           </p>
           <ul className="flex flex-wrap gap-6">
-            {['Privacy Policy', 'Terms', 'Sitemap'].map((item) => (
-              <li key={item}>
+            {[
+              ['Facebook', 'http://www.facebook.com/superiorweldmesh.india'],
+              ['LinkedIn', 'http://www.linkedin.com/company/superior-weldmesh-pvt-ltd/'],
+              ['Instagram', 'https://www.instagram.com/superiorweldmesh.india'],
+            ].map(([label, href]) => (
+              <li key={label}>
                 <a
-                  href="#top"
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
                   className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel transition-colors duration-200 hover:text-chalk"
                 >
-                  {item}
+                  {label}
                 </a>
               </li>
             ))}

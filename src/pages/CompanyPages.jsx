@@ -19,7 +19,7 @@ import { products } from '../data/products';
 
 const COMPANY = {
   phones: ['(+91) 97642 70290', '(+91) 87665 06146'],
-  emails: ['info@superiorweldmesh.com', 'sales@superiorweldmesh.com'],
+  emails: ['info@superiorweldmesh.com'],
   address: 'Plot No. 263, P.H. No. 27, Bhandara Road, Wadoda, Nagpur, Maharashtra 441104',
 };
 
@@ -168,6 +168,163 @@ const PRODUCT_DETAILS = {
       'Events and crowd control',
       'Temporary work zones',
       'Site access management',
+    ],
+  },
+};
+
+const ADDITIONAL_PRODUCT_DETAILS = {
+  'seven-fence': {
+    formats: ['Galvanized iron', 'Pure polyester coating', 'Complete fence system'],
+    specs: [
+      ['Mesh size', '100 x 50 mm'],
+      ['Wire diameter', '4.5-5 mm'],
+      ['Panel width', '2500 mm'],
+      ['Panel length', '3000 mm'],
+      ['Standard', 'IS 4948 & IS 4826'],
+    ],
+    uses: [
+      'Schools and playgrounds',
+      'Storage depots',
+      'Kindergartens and swimming pools',
+      'Construction sites',
+    ],
+  },
+  'twin-wire-fence': {
+    formats: ['Galvanized iron', 'Pure polyester coating', 'Modular perimeter system'],
+    specs: [
+      ['Mesh size', '150 x 50 mm'],
+      ['Wire diameter', '5-6 mm'],
+      ['Panel width', '2500 mm'],
+      ['Panel length', '3000 mm'],
+      ['Standard', 'IS 4948 & IS 4826'],
+    ],
+    uses: [
+      'Commercial and industrial parks',
+      'Critical infrastructure',
+      'Transport and aviation',
+      'Educational and sports campuses',
+    ],
+  },
+  'hot-dip-gi-welded-mesh': {
+    formats: ['Hot-dip galvanized iron', 'Rolls', 'Project-specific dimensions'],
+    specs: [
+      ['Mesh size', '17-300 mm'],
+      ['Wire diameter', '1-6 mm'],
+      ['Height', '900-3000 mm'],
+      ['Roll length', '15-30 m'],
+      ['Standard', 'IS 4948 & IS 4826'],
+    ],
+    uses: [
+      'Animal cages and aviaries',
+      'Tree and crop protection',
+      'Machinery guarding',
+      'Storage, windows and balconies',
+    ],
+  },
+  'ms-welded-mesh': {
+    formats: ['Mild steel, self-colour finish', 'Fabrication-ready mesh', 'Post-coating base'],
+    specs: [
+      ['Mesh size', '17-300 mm'],
+      ['Wire diameter', '1-6 mm'],
+      ['Height', '900-3000 mm'],
+      ['Roll length', '15-30 m'],
+      ['Standard', 'IS 4948 & IS 4826'],
+    ],
+    uses: [
+      'Fan guards and vent covers',
+      'Machine guarding',
+      'Decorative grilles',
+      'Balcony screens and trunking',
+    ],
+  },
+  'poultry-welded-wire-mesh': {
+    formats: ['Rigid welded mesh', 'Poultry enclosures', 'Custom sheets and rolls'],
+    specs: [
+      ['Mesh size', '12.7-150 mm'],
+      ['Wire diameter', '3-6 mm'],
+      ['Height', '900-3000 mm'],
+      ['Length', '1-6 m'],
+      ['Standard', 'IS 4948 & IS 4826'],
+    ],
+    uses: [
+      'Coop windows and ventilation',
+      'Poultry run boundaries',
+      'Chick brooder enclosures',
+      'Flooring and manure trays',
+    ],
+  },
+  'custom-weld-mesh-panels': {
+    formats: ['Mild steel', 'Galvanized iron', 'Pure polyester coating'],
+    specs: [
+      ['Mesh size', '25-300 mm'],
+      ['Wire diameter', '2-12 mm'],
+      ['Maximum width', '3000 mm'],
+      ['Maximum length', '6000 mm'],
+      ['Standard', 'IS 4948 & IS 4826'],
+    ],
+    uses: [
+      'Storage areas and pallets',
+      'Machine safety guards',
+      'Tree guards',
+      'Industrial fabrication',
+    ],
+  },
+  'knotted-fence': {
+    formats: ['High-tensile galvanized wire', 'Graduated aperture mesh', 'Flexible knot joints'],
+    specs: [
+      ['Construction', 'Advanced knot joints'],
+      ['Mesh design', 'Smaller lower apertures'],
+      ['Installation', 'Fewer poles required'],
+      ['Finish', 'Galvanized'],
+    ],
+    uses: [
+      'Livestock containment',
+      'Wild-animal and crop protection',
+      'Highway boundaries',
+      'Railway boundaries',
+    ],
+  },
+  'welded-mesh-decking-panels': {
+    formats: ['Mild steel', 'Galvanized iron', 'Pure polyester coating'],
+    specs: [
+      ['Mesh size', '50 x 100 mm'],
+      ['Wire diameter', '4-5 mm'],
+      ['Width', 'Customizable'],
+      ['Length', 'Customizable'],
+      ['Standard', 'IS 4948 & IS 4826'],
+    ],
+    uses: ['Pallet racking', 'Order picking', 'Cold storage', 'Automotive and retail inventory'],
+  },
+  'weld-mesh-cable-trays': {
+    formats: ['Mild steel', 'Galvanized iron', 'Pure polyester coating'],
+    specs: [
+      ['Mesh size', '100 x 50 mm'],
+      ['Wire diameter', '4-5 mm'],
+      ['Width', '100-1000 mm'],
+      ['Length', '3000 mm'],
+      ['Standard', 'IS 4948 & IS 4826'],
+    ],
+    uses: [
+      'Data centres',
+      'Commercial buildings',
+      'Laboratories',
+      'Industrial and renewable-energy installations',
+    ],
+  },
+  'rapid-deployment-defensive-barriers': {
+    formats: ['Galvanized iron mesh', 'Pure polyester finish', 'Green or white geotextile'],
+    specs: [
+      ['Mesh size', '50 or 75 mm'],
+      ['Wire diameter', '4-5 mm'],
+      ['Width', '600-1500 mm'],
+      ['Height', '600-2500 mm'],
+      ['Length', 'Multiple configurations'],
+    ],
+    uses: [
+      'Flood barriers',
+      'Military bunkers',
+      'International borders',
+      'Critical infrastructure protection',
     ],
   },
 };
@@ -345,7 +502,7 @@ function ProductDetailPage() {
       </PageFrame>
     );
   }
-  const detail = PRODUCT_DETAILS[slug];
+  const detail = PRODUCT_DETAILS[slug] || ADDITIONAL_PRODUCT_DETAILS[slug];
   return (
     <PageFrame title={product.name}>
       <PageHero
@@ -456,11 +613,7 @@ function ContactPage() {
               </div>
               <div>
                 <MailIcon className="h-5 w-5 text-molten" />
-                <p className="mt-3 text-lg font-medium">
-                  {COMPANY.emails[0]}
-                  <br />
-                  {COMPANY.emails[1]}
-                </p>
+                <p className="mt-3 text-lg font-medium">{COMPANY.emails[0]}</p>
               </div>
               <p className="max-w-sm leading-relaxed text-ink/70">
                 Superior Weldmesh Private Limited

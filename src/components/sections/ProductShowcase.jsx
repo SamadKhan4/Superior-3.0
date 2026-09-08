@@ -15,7 +15,7 @@ const EASE = [0.22, 1, 0.36, 1];
 function ProductShowcase() {
   return (
     <section id="products" className="relative w-full bg-ink" aria-labelledby="products-heading">
-      <div className="mx-auto max-w-shell px-6 pt-24 lg:px-10 lg:pt-32">
+      <div className="relative z-10 mx-auto max-w-shell bg-ink px-6 pt-24 lg:px-10 lg:pt-32">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <div className="mb-6 flex items-center gap-4">

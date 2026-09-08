@@ -1,9 +1,4 @@
-const ITEMS = [
-  'MSME registered enterprise',
-  'ISO 9001:2015 certified company',
-  'IndiaMART TrustSEAL',
-  'GeM government e-marketplace',
-];
+const ITEMS = ['MSME registered enterprise', 'IndiaMART TrustSEAL', 'GeM government e-marketplace'];
 
 function Certifications() {
   return (

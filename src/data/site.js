@@ -212,15 +212,19 @@ const testimonials = [
   },
 ];
 const enquiryProducts = [
-  'Welded Wire Mesh',
-  'Chain Link',
-  'Barbed Wire',
-  'Gabion Weldmesh',
-  'Concertina / Razor Wire',
-  'V-Bend Fence',
+  'Welded Wire Mesh / GI / MS / Poultry',
+  'Custom Weld Mesh Panels',
+  'V-Bend / Seven / Twin Wire Fence',
   'Anti-Climb Fence',
   'Rebar / TMT Weld Mesh',
-  'Temporary Barricades',
+  'Gabion Weldmesh',
+  'Chain Link / Knotted Fence',
+  'Concertina / Razor Wire',
+  'Barbed Wire',
+  'Welded Mesh Decking & Rack Panels',
+  'Weld Mesh Cable Trays',
+  'Rapid-Deployment Defensive Barriers',
+  'Crowd Control Barricades',
   'Other',
 ];
 const siteImages = {

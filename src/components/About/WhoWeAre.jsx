@@ -1,7 +1,7 @@
 const STATS = [
   ['2011', 'Established'],
-  ['600+', 'Satisfied clients'],
-  ['20+', 'Professionals'],
+  ['1,000', 'Tonnes per month capacity'],
+  ['100,000+', 'Sq. ft. manufacturing area'],
   ['Custom', 'Sizes & specifications'],
 ];
 

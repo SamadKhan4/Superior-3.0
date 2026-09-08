@@ -90,9 +90,9 @@ function FinalCTA() {
             </FadeUp>
             <dl className="mt-16 grid grid-cols-1 gap-6 border-t border-metal/20 pt-8 sm:grid-cols-3">
               {[
-                { k: 'Call', v: '+91 712 000 0000' },
-                { k: 'Email', v: 'sales@superiorweldmesh.com' },
-                { k: 'Location', v: 'Nagpur, Maharashtra' },
+                { k: 'Call', v: '+91 97642 70290' },
+                { k: 'Email', v: 'info@superiorweldmesh.com' },
+                { k: 'Location', v: 'Wadoda, Nagpur, Maharashtra' },
               ].map((row) => (
                 <div key={row.k}>
                   <dt className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">
