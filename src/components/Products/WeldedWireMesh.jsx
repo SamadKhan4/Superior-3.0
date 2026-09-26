@@ -3,12 +3,11 @@ import { ChevronDownIcon, CheckCircle2Icon } from 'lucide-react';
 import orderDiagram from '../../assests/Products/weldmesh.png';
 
 const SPECIFICATIONS = [
-  ['Mesh size', '17 mm – 300 mm'],
-  ['Wire diameter', '1.00 mm – 12.00 mm'],
-  ['Width', '0.5 – 2.5 metre'],
-  ['Length', 'As per requirement'],
-  ['Coating', 'GI / polyester or epoxy powder coated'],
-  ['IS standard', 'IS 4948:2002'],
+  ['Mesh size', '12.7 mm - 300 mm (product dependent)'],
+  ['Wire diameter', '1 mm - 12 mm (product dependent)'],
+  ['Width / height', 'Up to 3000 mm'],
+  ['Length', '1 m - 30 m (product dependent)'],
+  ['IS standard', 'IS 4948 & IS 4826'],
 ];
 
 const APPLICATIONS = [
@@ -26,7 +25,7 @@ const APPLICATIONS = [
   ],
   [
     'Animal enclosures',
-    'Stainless-steel mesh options support animal farms, veterinary facilities and shelters.',
+    'Rigid welded mesh options support animal farms, veterinary facilities and shelters.',
   ],
 ];
 
@@ -132,7 +131,7 @@ function WeldedWireMesh({ product }) {
             <p className="pt-5 font-mono text-[10px] uppercase tracking-[.2em] text-ink/55">
               Materials
             </p>
-            {['Mild steel', 'Galvanized iron', 'Stainless steel'].map((item) => (
+            {['Mild steel', 'Galvanized iron', 'Pure polyester coating'].map((item) => (
               <p key={item} className="flex items-center gap-3 border-b border-ink/15 py-4 text-sm">
                 <CheckCircle2Icon className="h-4 w-4 text-molten" />
                 {item}

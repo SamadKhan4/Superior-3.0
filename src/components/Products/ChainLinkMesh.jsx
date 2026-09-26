@@ -3,13 +3,11 @@ import { CheckCircle2Icon, ChevronDownIcon } from 'lucide-react';
 import chainLinkDiagram from '../../assests/Products/chainlink.png';
 
 const SPECIFICATIONS = [
-  ['Mesh size', '30 mm – 125 mm'],
-  ['Wire thickness', '1.60 mm – 5.00 mm'],
-  ['Height', '600 mm – 3000 mm'],
-  ['Coating', 'GI / PVC / PP'],
-  ['Process', 'Automatic'],
-  ['Standard length', '15 metres'],
-  ['Tensile strength', '550 N/m²'],
+  ['Mesh size', '28 mm - 100 mm'],
+  ['Wire diameter', '2.00 mm - 5 mm'],
+  ['Roll height', '900 mm - 3000 mm'],
+  ['Roll length', '15 m - 30 m'],
+  ['IS standard', 'IS 4948 & IS 4826'],
 ];
 const APPLICATIONS = [
   [
@@ -142,7 +140,7 @@ function ChainLinkMesh({ product }) {
             <p className="pt-7 font-mono text-[10px] uppercase tracking-[.2em] text-ink/55">
               Categories
             </p>
-            {['Galvanized iron', 'Poly vinyl chloride', 'Stainless steel'].map((item) => (
+            {['Galvanized iron', 'Poly vinyl chloride'].map((item) => (
               <p key={item} className="flex items-center gap-3 border-b border-ink/15 py-4 text-sm">
                 <CheckCircle2Icon className="h-4 w-4 text-molten" />
                 {item}

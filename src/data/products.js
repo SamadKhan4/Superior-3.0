@@ -1,3 +1,12 @@
+import product1Image from '../assests/changed product image/1.png';
+import product9Image from '../assests/changed product image/9.png';
+import product10Image from '../assests/changed product image/10.png';
+import product11Image from '../assests/changed product image/11.png';
+import product13Image from '../assests/changed product image/13.png';
+import product14Image from '../assests/changed product image/14.png';
+import product16Image from '../assests/changed product image/16.png';
+import product19Image from '../assests/changed product image/19.png';
+
 const products = [
   {
     id: 'welded-wire-mesh',
@@ -5,8 +14,8 @@ const products = [
     name: 'Welded Wire Mesh',
     description:
       'Precision welded mesh manufactured in mild steel, galvanized iron and stainless steel for industrial, construction, reinforcement, storage and security applications.',
-    spec: 'WIRE 1.6\u20138.0 MM / MS \xB7 GI \xB7 SS',
-    image: '/78858287-a104-445b-918f-89ec65d6734e.jpg',
+    spec: 'MESH 12.7-300 MM / WIRE 1-12 MM',
+    image: product1Image,
     alt: 'Rolls and panels of precision welded wire mesh stacked in a warehouse',
   },
   {
@@ -15,7 +24,7 @@ const products = [
     name: 'V-Bend Fence',
     description:
       'Rigid architectural fencing with reinforced V-shaped bends combining strength, visibility and contemporary perimeter design.',
-    spec: 'PANEL 2.0\u20133.0 M / POWDER COATED',
+    spec: '200 x 50 MM / WIRE 4-5 MM',
     image: '/44070e11-f14e-4955-ac07-ab19f1009ca3.jpg',
     alt: 'Powder coated V-bend rigid mesh fencing around a modern institutional building',
   },
@@ -25,7 +34,7 @@ const products = [
     name: 'Anti-Climb Fence',
     description:
       'High-security mesh engineered with closely spaced openings for demanding perimeter-security environments.',
-    spec: 'APERTURE 76.2 \xD7 12.7 MM / 358',
+    spec: '76.20 x 12.70 MM / WIRE 3-4 MM',
     image: '/730ab70a-ec1f-48b0-94b7-574569e9f0db.jpg',
     alt: 'High security 358 anti-climb fencing at an infrastructure facility perimeter',
   },
@@ -35,7 +44,7 @@ const products = [
     name: 'Gabion Weldmesh',
     description:
       'Customizable welded gabion systems for retaining structures, landscaping, architecture and erosion-management applications.',
-    spec: 'BASKET 1 \xD7 1 \xD7 1 M / HOT DIP GI',
+    spec: '75 x 75 MM / WIRE 4-5 MM',
     image: '/fa1afbc5-1cf0-4df0-baf4-4d5551a5ea08.jpg',
     alt: 'Architectural gabion wall built from welded mesh baskets filled with stone',
   },
@@ -45,7 +54,7 @@ const products = [
     name: 'Rebar / TMT Weld Mesh',
     description:
       'Engineered reinforcement mesh developed for concrete construction, roads and structural applications requiring consistency and installation efficiency.',
-    spec: 'BAR 6\u201312 MM / FE 500 D',
+    spec: '50 x 300 MM / WIRE 6-12 MM',
     image: '/70ef911b-233c-42bd-80ac-1aebd4df8c4e.jpg',
     alt: 'Steel reinforcement weld mesh sheets laid across a concrete construction slab',
   },
@@ -55,7 +64,7 @@ const products = [
     name: 'Chain Link Fence',
     description:
       'Versatile chain-link fencing systems manufactured for industrial, commercial, agricultural and perimeter applications.',
-    spec: 'DIAMOND 25\u201375 MM / GI \xB7 PVC',
+    spec: 'MESH 28-100 MM / WIRE 2-5 MM',
     image: '/904ff769-3c8a-47b8-9574-cbe5cb5e7147.jpg',
     alt: 'Galvanized chain link fence with an industrial plant behind it',
   },
@@ -65,7 +74,7 @@ const products = [
     name: 'Concertina / Razor Wire',
     description:
       'High-security perimeter solutions engineered to provide additional protection for sensitive properties and infrastructure.',
-    spec: 'COIL 600\u2013900 MM / BTO-22',
+    spec: 'BT 10 \xB7 BT 22 \xB7 BT 28 \xB7 BT 30',
     image: '/56229124-aeeb-447b-b6b8-0fc3f28c3666.jpg',
     alt: 'Concertina razor wire coil running along a concrete perimeter wall',
   },
@@ -75,7 +84,7 @@ const products = [
     name: 'Barbed Wire',
     description:
       'Reliable boundary fencing manufactured for industrial, agricultural and perimeter applications.',
-    spec: 'IS 278 / 2 PLY \xB7 4 POINT',
+    spec: 'GALVANIZED IRON / 4-POINT BARB',
     image: '/e5f3b460-fb51-4a29-80d0-5bea87154874.jpg',
     alt: 'Barbed wire boundary fence strands against a dusk industrial landscape',
   },
@@ -85,8 +94,8 @@ const products = [
     name: 'Crowd Control Barricades',
     description:
       'Portable galvanized mesh barricading systems designed for construction sites, events, crowd control and temporary site protection.',
-    spec: 'PANEL 2.2 \xD7 1.2 M / PORTABLE',
-    image: '/3c32d04f-3a6f-4b25-804d-084bfdc02859.jpg',
+    spec: '100 x 50 MM / WIRE 4-5 MM',
+    image: product9Image,
     alt: 'Portable galvanized mesh barricade panels lined up at a construction site',
   },
   {
@@ -95,8 +104,8 @@ const products = [
     name: 'Seven Fence (P-Bend / BRC)',
     description:
       'Rolled-top welded mesh fencing with safe, smooth edges and clear through-vision for safety-conscious boundaries.',
-    spec: '100 x 50 MM / 4.5-5 MM WIRE',
-    image: '/44070e11-f14e-4955-ac07-ab19f1009ca3.jpg',
+    spec: '100 x 50 MM / WIRE 4.5-5 MM',
+    image: product10Image,
     alt: 'Rigid welded mesh fence panel with a safe rolled edge',
   },
   {
@@ -105,8 +114,8 @@ const products = [
     name: 'Twin Wire Fence',
     description:
       'An ultra-rigid perimeter fence using dual horizontal wires for commercial, industrial and institutional security.',
-    spec: '150 x 50 MM / 5-6 MM WIRE',
-    image: '/730ab70a-ec1f-48b0-94b7-574569e9f0db.jpg',
+    spec: '150 x 50 MM / WIRE 5-6 MM',
+    image: product11Image,
     alt: 'High-security twin wire welded mesh perimeter fence',
   },
   {
@@ -115,7 +124,7 @@ const products = [
     name: 'Hot-Dip GI Welded Mesh',
     description:
       'Hot-dip galvanized welded mesh for corrosion-resistant outdoor, agricultural and industrial applications.',
-    spec: '17-300 MM / 1-6 MM WIRE',
+    spec: '17-300 MM / WIRE 1-6 MM',
     image: '/78858287-a104-445b-918f-89ec65d6734e.jpg',
     alt: 'Hot-dip galvanized welded wire mesh roll',
   },
@@ -125,8 +134,8 @@ const products = [
     name: 'MS Welded Mesh',
     description:
       'Economical ungalvanized mild-steel welded mesh for fabrication, structural embedment and indoor applications.',
-    spec: '17-300 MM / 1-6 MM WIRE',
-    image: '/78858287-a104-445b-918f-89ec65d6734e.jpg',
+    spec: '17-300 MM / WIRE 1-6 MM',
+    image: product13Image,
     alt: 'Mild steel welded wire mesh for fabrication',
   },
   {
@@ -135,8 +144,8 @@ const products = [
     name: 'Poultry Welded Wire Mesh',
     description:
       'Rigid welded hardware cloth for poultry coops, runs, cages, ventilation and protected enclosures.',
-    spec: '12.7-150 MM / 3-6 MM WIRE',
-    image: '/78858287-a104-445b-918f-89ec65d6734e.jpg',
+    spec: '12.7-150 MM / WIRE 3-6 MM',
+    image: product14Image,
     alt: 'Rigid welded wire mesh for poultry enclosures',
   },
   {
@@ -145,7 +154,7 @@ const products = [
     name: 'Custom Weld Mesh Panels',
     description:
       'Made-to-order welded mesh panels tailored to project aperture, wire diameter, dimensions and finish.',
-    spec: '25-300 MM / 2-12 MM WIRE',
+    spec: '25-300 MM / WIRE 2-12 MM',
     image: '/78858287-a104-445b-918f-89ec65d6734e.jpg',
     alt: 'Custom welded mesh panels ready for fabrication',
   },
@@ -156,7 +165,7 @@ const products = [
     description:
       'High-tensile knotted fencing with graduated apertures for livestock, crop protection and long rural boundaries.',
     spec: 'HIGH-TENSILE GI / GRADUATED MESH',
-    image: '/904ff769-3c8a-47b8-9574-cbe5cb5e7147.jpg',
+    image: product16Image,
     alt: 'High-tensile knotted agricultural fence',
   },
   {
@@ -165,7 +174,7 @@ const products = [
     name: 'Welded Mesh Decking & Rack Panels',
     description:
       'Reinforced wire-mesh decking panels for pallet racks, storage systems and safer warehouse operations.',
-    spec: '50 x 100 MM / 4-5 MM WIRE',
+    spec: '50 x 100 MM / WIRE 4-5 MM',
     image: '/c4cd0941-b26b-4a42-863e-f8c5ae2b1237.jpg',
     alt: 'Welded wire mesh decking panels on industrial storage racks',
   },
@@ -175,7 +184,7 @@ const products = [
     name: 'Weld Mesh Cable Trays',
     description:
       'Open-grid basket trays for routing, supporting and maintaining power, control and data cables.',
-    spec: '100 x 50 MM / 100-1000 MM WIDTH',
+    spec: '100 x 50 MM / WIRE 4-5 MM',
     image: '/016ca7a0-8884-4189-9d78-c8775d086807.jpg',
     alt: 'Open-grid welded mesh cable tray in an industrial installation',
   },
@@ -185,8 +194,8 @@ const products = [
     name: 'Rapid-Deployment Defensive Barriers',
     description:
       'Multi-cell welded-mesh and geotextile barriers for flood control, fortification and critical infrastructure protection.',
-    spec: '50 / 75 MM / 600-2500 MM HEIGHT',
-    image: '/fa1afbc5-1cf0-4df0-baf4-4d5551a5ea08.jpg',
+    spec: '50 / 75 MM / WIRE 4-5 MM',
+    image: product19Image,
     alt: 'Welded mesh defensive barrier filled for flood and perimeter protection',
   },
 ];

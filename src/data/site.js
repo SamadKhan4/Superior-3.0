@@ -238,7 +238,7 @@ const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Products', href: '/products' },
   { label: 'Applications', href: '/applications' },
-  { label: 'Weight Calculator', href: '/#calculator' },
+  { label: 'Weight Calculator', href: '/weight-calculator' },
   { label: 'Contact', href: '/contact' },
 ];
 export {

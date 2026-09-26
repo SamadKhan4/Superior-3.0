@@ -15,6 +15,14 @@ const BENEFITS = [
   ],
 ];
 
+const SPECIFICATIONS = [
+  ['Mesh size', '100 mm × 50 mm'],
+  ['Wire diameter', '4 mm - 5 mm'],
+  ['Width', '3000 mm maximum'],
+  ['Length', '2000 mm maximum'],
+  ['IS standard', 'IS 4948 & IS 4826'],
+];
+
 function TemporaryBarricades({ product }) {
   return (
     <>
@@ -74,6 +82,31 @@ function TemporaryBarricades({ product }) {
               loading="lazy"
             />
           </aside>
+        </div>
+      </section>
+      <section className="bg-graphite py-20 lg:py-28">
+        <div className="mx-auto grid max-w-shell gap-12 px-6 lg:grid-cols-12 lg:px-10">
+          <div className="lg:col-span-5">
+            <p className="font-mono text-[10px] uppercase tracking-[.22em] text-molten">
+              / Specifications
+            </p>
+            <h2 className="mt-5 font-display text-[clamp(2.8rem,5vw,4.6rem)] font-semibold uppercase leading-[.9] tracking-tightest">
+              Built to deploy quickly.
+            </h2>
+          </div>
+          <dl className="border-t border-metal/20 lg:col-span-7">
+            {SPECIFICATIONS.map(([label, value]) => (
+              <div
+                key={label}
+                className="grid grid-cols-1 gap-2 border-b border-metal/20 py-4 text-sm sm:grid-cols-2"
+              >
+                <dt className="font-mono text-[10px] uppercase tracking-[.14em] text-steel">
+                  {label}
+                </dt>
+                <dd className="text-chalk sm:text-right">{value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
       <section className="bg-graphite py-20 lg:py-28">

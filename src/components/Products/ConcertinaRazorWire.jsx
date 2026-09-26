@@ -3,13 +3,11 @@ import { CheckCircle2Icon, ChevronDownIcon } from 'lucide-react';
 import razorDiagram from '../../assests/Products/concerntina.png';
 
 const SPECS = [
-  ['Wire thickness', '2.45 mm – 3.20 mm'],
-  ['Strip thickness', '0.45 mm – 0.60 mm'],
-  ['Blade height', '5 mm'],
-  ['Blade width', '10 mm – 17 mm'],
-  ['Coil width', '300 mm – 1000 mm'],
-  ['Standard length', '6.00 metres'],
-  ['Tensile strength', '550 N/m²'],
+  ['Product range', 'BT 10 / BT 22 / BT 28 / BT 30'],
+  ['Wire diameter', 'Not specified in supplied PDF'],
+  ['Width', 'Not specified in supplied PDF'],
+  ['Length', 'Not specified in supplied PDF'],
+  ['IS standard', 'Not specified in supplied PDF'],
 ];
 const APPLICATIONS = [
   [
@@ -128,7 +126,7 @@ function ConcertinaRazorWire({ product }) {
             <p className="pt-5 font-mono text-[10px] uppercase tracking-[.2em] text-ink/55">
               Categories
             </p>
-            {['Galvanized iron', 'Stainless steel'].map((item) => (
+            {['Galvanized iron', 'Stainless steel', 'Pure polyester'].map((item) => (
               <p key={item} className="flex items-center gap-3 border-b border-ink/15 py-4 text-sm">
                 <CheckCircle2Icon className="h-4 w-4 text-molten" />
                 {item}

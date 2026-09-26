@@ -62,7 +62,7 @@ function WeightCalculator() {
             </p>
           </FadeUp>
           <FadeUp delay={0.1} className="mt-10">
-            <Button href="#calculator" variant="light" arrow="right">
+            <Button href="/weight-calculator" variant="light" arrow="right">
               Open Weight Calculator
             </Button>
           </FadeUp>

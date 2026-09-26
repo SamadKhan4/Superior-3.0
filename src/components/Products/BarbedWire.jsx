@@ -3,12 +3,11 @@ import { CheckCircle2Icon, ChevronDownIcon } from 'lucide-react';
 import barbedWireHero from '../../assets/products/barbed-wire-hero.png';
 
 const SPECS = [
-  ['Barb distance', '75 mm', '75 mm', '75 mm'],
-  ['Wire thickness', '12×12', '12×14', '14×14'],
-  ['Length per kg', '6 m', '8 m', '12 m'],
-  ['Standard roll', '40–45 kg', '40–45 kg', '40–45 kg'],
-  ['Tensile strength', '550 N/m²', '550 N/m²', '550 N/m²'],
-  ['IS standard', 'IS 278', 'IS 278', 'IS 278'],
+  ['Mesh size', 'Not specified in supplied PDF'],
+  ['Wire diameter', 'Not specified in supplied PDF'],
+  ['Width', 'Not specified in supplied PDF'],
+  ['Length', 'Not specified in supplied PDF'],
+  ['IS standard', 'Not specified in supplied PDF'],
 ];
 const APPLICATIONS = [
   [
@@ -122,7 +121,7 @@ function BarbedWire({ product }) {
             <p className="pt-5 font-mono text-[10px] uppercase tracking-[.2em] text-ink/55">
               Available materials
             </p>
-            {['Galvanized iron', 'PVC coated'].map((item) => (
+            {['Galvanized iron'].map((item) => (
               <p key={item} className="flex items-center gap-3 border-b border-ink/15 py-4 text-sm">
                 <CheckCircle2Icon className="h-4 w-4 text-molten" />
                 {item}
@@ -141,32 +140,20 @@ function BarbedWire({ product }) {
               Choose the wire pair.
             </h2>
           </div>
-          <div className="overflow-x-auto lg:col-span-8">
-            <table className="w-full min-w-[620px] border-collapse text-left text-sm">
-              <thead className="bg-metal/15 font-mono text-[10px] uppercase tracking-[.14em] text-steel">
-                <tr>
-                  {['Specifications', '12×12', '12×14', '14×14'].map((label) => (
-                    <th key={label} className="border border-metal/25 px-4 py-4">
-                      {label}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {SPECS.map(([label, ...values]) => (
-                  <tr key={label}>
-                    {[label, ...values].map((value, index) => (
-                      <td
-                        key={`${label}-${value}`}
-                        className={`border border-metal/20 px-4 py-4 ${index === 0 ? 'font-mono text-[10px] uppercase tracking-[.1em] text-steel' : 'text-chalk'}`}
-                      >
-                        {value}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="lg:col-span-8">
+            <dl className="border-t border-metal/20">
+              {SPECS.map(([label, value]) => (
+                <div
+                  key={label}
+                  className="grid grid-cols-1 gap-2 border-b border-metal/20 py-4 text-sm sm:grid-cols-2"
+                >
+                  <dt className="font-mono text-[10px] uppercase tracking-[.14em] text-steel">
+                    {label}
+                  </dt>
+                  <dd className="text-chalk sm:text-right">{value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </section>

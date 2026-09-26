@@ -68,9 +68,9 @@ function Home() {
         <ScrollOverlap layer={8}>
           <Configurator />
         </ScrollOverlap>
-        <ScrollOverlap layer={9}>
+        {/* <ScrollOverlap layer={9}>
           <WeightCalculator />
-        </ScrollOverlap>
+        </ScrollOverlap> */}
         <ScrollOverlap layer={10}>
           <Differentiators />
         </ScrollOverlap>

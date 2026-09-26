@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { ApplicationsPage } from './pages/Applications';
+import { WeightCalculatorPage } from './pages/WeightCalculator';
 import { SmoothScroll } from './components/SmoothScroll';
 import {
   AboutPage,
@@ -20,6 +21,7 @@ function App() {
           <Route path="/applications" element={<ApplicationsPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/products/:slug" element={<ProductDetailPage />} />
+          <Route path="/weight-calculator" element={<WeightCalculatorPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

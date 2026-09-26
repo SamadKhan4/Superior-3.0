@@ -3,13 +3,12 @@ import { CheckCircle2Icon, ChevronDownIcon } from 'lucide-react';
 import gabionDiagram from '../../assests/Products/Gabion.png';
 
 const SPECIFICATIONS = [
-  ['Mesh size', '50 mm – 300 mm'],
-  ['Wire diameter', '3.00 mm – 6.00 mm'],
-  ['Width', '0.5 – 3 metre'],
-  ['Height', '0.5 – 3 metre'],
-  ['Length', '0.5 – 3 metre'],
-  ['Coating', 'GI / polyester or epoxy powder coated'],
-  ['IS standard', 'IS 16013:2012'],
+  ['Mesh size', '75 mm × 75 mm'],
+  ['Wire diameter', '4 mm - 5 mm'],
+  ['Width', '2500 mm'],
+  ['Length', '3000 mm'],
+  ['Height', '3000 mm'],
+  ['IS standard', 'IS 4948 & IS 4826'],
 ];
 const APPLICATIONS = [
   [

@@ -27,14 +27,13 @@ const PRODUCT_DETAILS = {
   'welded-wire-mesh': {
     intro:
       'Welded wire mesh is made by straightening and spot welding quality carbon wires at every intersection, creating a strong and consistent mesh structure for industrial, construction and security uses.',
-    formats: ['Mild Steel', 'Galvanized Iron', 'Stainless Steel', 'Rolls, panels and screens'],
+    formats: ['Mild steel', 'Galvanized iron', 'Pure polyester coating', 'Rolls and panels'],
     specs: [
-      ['Mesh size', '17–300 mm'],
-      ['Wire diameter', '1.00–12.00 mm'],
-      ['Width', '0.5–2.5 m'],
-      ['Length', 'As required'],
-      ['Coating', 'GI / polyester or epoxy powder coat'],
-      ['Standard', 'IS 4948:2002'],
+      ['Mesh size', '12.7-300 mm (product dependent)'],
+      ['Wire diameter', '1-12 mm (product dependent)'],
+      ['Width / height', 'Up to 3000 mm'],
+      ['Length', '1-30 m (product dependent)'],
+      ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
       'Perimeter security',
@@ -48,10 +47,11 @@ const PRODUCT_DETAILS = {
       'Chain link fencing is a versatile, open-view boundary system for industrial facilities, commercial sites, farms and general perimeter protection.',
     formats: ['Galvanized iron', 'PVC coated', 'Custom heights and apertures'],
     specs: [
-      ['Mesh opening', '25–75 mm'],
-      ['Wire finish', 'GI / PVC coated'],
-      ['Height', 'As required'],
-      ['Supply', 'Rolls and complete fence systems'],
+      ['Mesh size', '28-100 mm'],
+      ['Wire diameter', '2-5 mm'],
+      ['Roll height', '900-3000 mm'],
+      ['Roll length', '15-30 m'],
+      ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
       'Industrial boundaries',
@@ -63,12 +63,13 @@ const PRODUCT_DETAILS = {
   'barbed-wire': {
     intro:
       'Barbed wire uses twisted longitudinal wires with regularly spaced sharp barbs to create an economical and dependable boundary and deterrent system.',
-    formats: ['Galvanized iron', 'PVC coated', 'Standard rolls'],
+    formats: ['Galvanized iron'],
     specs: [
-      ['Barb distance', '75 mm'],
-      ['Wire combinations', '12×12 / 12×14 / 14×14'],
-      ['Standard', 'IS 278'],
-      ['Tensile strength', '550 N/m²'],
+      ['Mesh size', 'Not specified in supplied PDF'],
+      ['Wire diameter', 'Not specified in supplied PDF'],
+      ['Width', 'Not specified in supplied PDF'],
+      ['Length', 'Not specified in supplied PDF'],
+      ['Standard', 'Not specified in supplied PDF'],
     ],
     uses: [
       'Agricultural and commercial land',
@@ -82,10 +83,12 @@ const PRODUCT_DETAILS = {
       'Welded gabions are high-tensile galvanized wire baskets filled with stone to form permeable, stable gravity structures for landscape, civil and architectural work.',
     formats: ['Gabion walls', 'Gabion pillars', 'Mattresses and baskets', 'Architectural gabions'],
     specs: [
-      ['Mesh size', '50–300 mm'],
-      ['Wire diameter', '3.00–6.00 mm'],
-      ['Width / height / length', '0.5–3 m'],
-      ['Coating', 'GI / polyester or epoxy powder coat'],
+      ['Mesh size', '75 x 75 mm'],
+      ['Wire diameter', '4-5 mm'],
+      ['Width', '2500 mm'],
+      ['Length', '3000 mm'],
+      ['Height', '3000 mm'],
+      ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: ['Landscaping', 'Retaining walls', 'Landslide mitigation', 'Temporary flood walls'],
   },
@@ -94,10 +97,11 @@ const PRODUCT_DETAILS = {
       'Concertina and razor wire systems add a high-security deterrent layer to sensitive perimeters, critical infrastructure and restricted facilities.',
     formats: ['Concertina coils', 'Razor wire coils', 'Perimeter topping systems'],
     specs: [
-      ['Coil diameter', '600–900 mm'],
-      ['Blade profile', 'BTO-22'],
-      ['Finish', 'Galvanized'],
-      ['Supply', 'Coils and installation accessories'],
+      ['Product range', 'BT 10 / BT 22 / BT 28 / BT 30'],
+      ['Wire diameter', 'Not specified in supplied PDF'],
+      ['Width', 'Not specified in supplied PDF'],
+      ['Length', 'Not specified in supplied PDF'],
+      ['Standard', 'Not specified in supplied PDF'],
     ],
     uses: [
       'Critical infrastructure',
@@ -111,11 +115,11 @@ const PRODUCT_DETAILS = {
       'V-bend mesh panels use architectural V folds to reinforce a rigid welded panel, combining an open view with a strong, visually ordered boundary.',
     formats: ['Rigid welded panels', 'GI panels', 'Powder-coated panels'],
     specs: [
-      ['Mesh size', '200 × 50 mm'],
-      ['Wire diameter', '4.00 mm'],
-      ['Width', '1.00–2.50 m'],
-      ['Length', 'As required'],
-      ['Coating', 'GI / polyester or epoxy powder coat'],
+      ['Mesh size', '200 x 50 mm'],
+      ['Wire diameter', '4 / 4.5 / 5 mm'],
+      ['Width', '2500 mm'],
+      ['Length', '3000 mm'],
+      ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
       'Buildings and townships',
@@ -129,10 +133,11 @@ const PRODUCT_DETAILS = {
       'Anti-climb fencing uses closely spaced welded apertures to limit footholds and handholds while maintaining visibility around high-security sites.',
     formats: ['358 mesh panels', 'Security gates', 'Integrated perimeter systems'],
     specs: [
-      ['Aperture', '76.2 × 12.7 mm'],
-      ['Configuration', '358 anti-climb'],
-      ['Finish', 'GI / powder coated'],
-      ['Panel height', 'As required'],
+      ['Mesh size', '76.20 x 12.70 mm'],
+      ['Wire diameter', '3-4 mm'],
+      ['Width', '2500 mm'],
+      ['Length', '3000 mm'],
+      ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
       'Utilities',
@@ -144,12 +149,13 @@ const PRODUCT_DETAILS = {
   'rebar-tmt-weld-mesh': {
     intro:
       'Rebar and TMT welded mesh provides consistently spaced reinforcement for concrete works, helping teams plan placement and speed repetitive slab and road work.',
-    formats: ['Fe 500D reinforcement mesh', 'Custom sheet sizes', 'Project-specific spacing'],
+    formats: ['Ribbed', 'Plain', 'Custom sheet sizes'],
     specs: [
-      ['Bar diameter', '6–12 mm'],
-      ['Steel grade', 'Fe 500D'],
-      ['Sheet size', 'As required'],
-      ['Use', 'Concrete reinforcement'],
+      ['Mesh size', '50 x 300 mm'],
+      ['Wire diameter', '6-12 mm'],
+      ['Width', '3000 mm'],
+      ['Length', '6000 mm'],
+      ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: ['Slabs and floors', 'Roads and pavements', 'Precast work', 'Structural construction'],
   },
@@ -158,10 +164,11 @@ const PRODUCT_DETAILS = {
       'Portable mesh barricades provide a quick, reusable boundary for construction activity, events, crowd management and short-term site protection.',
     formats: ['Galvanized portable panels', 'Interlocking bases', 'Project-ready barriers'],
     specs: [
-      ['Panel size', '2.2 × 1.2 m'],
-      ['Finish', 'Galvanized'],
-      ['Format', 'Portable'],
-      ['Use', 'Temporary site protection'],
+      ['Mesh size', '100 x 50 mm'],
+      ['Wire diameter', '4-5 mm'],
+      ['Width', '3000 mm maximum'],
+      ['Length', '2000 mm maximum'],
+      ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
       'Construction sites',
@@ -272,10 +279,11 @@ const ADDITIONAL_PRODUCT_DETAILS = {
   'knotted-fence': {
     formats: ['High-tensile galvanized wire', 'Graduated aperture mesh', 'Flexible knot joints'],
     specs: [
-      ['Construction', 'Advanced knot joints'],
-      ['Mesh design', 'Smaller lower apertures'],
-      ['Installation', 'Fewer poles required'],
-      ['Finish', 'Galvanized'],
+      ['Mesh size', 'Not specified in supplied PDF'],
+      ['Wire diameter', 'Not specified in supplied PDF'],
+      ['Width / height', 'Not specified in supplied PDF'],
+      ['Length', 'Not specified in supplied PDF'],
+      ['Standard', 'Not specified in supplied PDF'],
     ],
     uses: [
       'Livestock containment',
@@ -318,7 +326,8 @@ const ADDITIONAL_PRODUCT_DETAILS = {
       ['Wire diameter', '4-5 mm'],
       ['Width', '600-1500 mm'],
       ['Height', '600-2500 mm'],
-      ['Length', 'Multiple configurations'],
+      ['Length', 'Multiple'],
+      ['Standard', 'Not specified in supplied PDF'],
     ],
     uses: [
       'Flood barriers',

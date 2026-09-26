@@ -3,11 +3,11 @@ import { CheckCircle2Icon, ChevronDownIcon } from 'lucide-react';
 import rebarDiagram from '../../assests/Products/rebar.png';
 
 const SPECS = [
-  ['Mesh size', '75 mm – 300 mm'],
-  ['Wire diameter', '6.00 mm – 12.00 mm'],
-  ['Width', '0.5 – 6 metre'],
-  ['Height', '0.5 – 6 metre'],
-  ['Length', '0.5 – 6 metre'],
+  ['Mesh size', '50 mm × 300 mm'],
+  ['Wire diameter', '6 mm - 12 mm'],
+  ['Width', '3000 mm'],
+  ['Length', '6000 mm'],
+  ['IS standard', 'IS 4948 & IS 4826'],
 ];
 const APPLICATIONS = [
   [
@@ -131,7 +131,7 @@ function RebarTmtWeldMesh({ product }) {
             <p className="pt-5 font-mono text-[10px] uppercase tracking-[.2em] text-ink/55">
               Offered in
             </p>
-            {['Branded rebars', 'Commercial rebars'].map((item) => (
+            {['Ribbed', 'Plain'].map((item) => (
               <p key={item} className="flex items-center gap-3 border-b border-ink/15 py-4 text-sm">
                 <CheckCircle2Icon className="h-4 w-4 text-molten" />
                 {item}

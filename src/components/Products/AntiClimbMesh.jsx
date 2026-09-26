@@ -4,10 +4,10 @@ import antiClimbDiagram from '../../assests/Products/anticlimb.png';
 
 const SPECS = [
   ['Mesh size', '76.20 mm × 12.70 mm'],
-  ['Wire diameter', '4.00 mm'],
-  ['Width', '1.00 – 2.50 metre'],
-  ['Length', 'As per requirement'],
-  ['Coating', 'GI / polyester or epoxy powder coated'],
+  ['Wire diameter', '3 mm - 4 mm'],
+  ['Width', '2500 mm'],
+  ['Length', '3000 mm'],
+  ['IS standard', 'IS 4948 & IS 4826'],
 ];
 const SECTORS = ['Airports', 'Banks and embassies', 'Borders', 'Defence', 'Prisons', 'Societies'];
 const FEATURES = [
