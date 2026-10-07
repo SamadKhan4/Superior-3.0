@@ -14,7 +14,7 @@ const products = [
     name: 'Welded Wire Mesh',
     description:
       'Precision welded mesh manufactured in mild steel, galvanized iron and stainless steel for industrial, construction, reinforcement, storage and security applications.',
-    spec: 'MESH 12.7-300 MM / WIRE 1-12 MM',
+    spec: 'MESH 12.7-17 MM / WIRE 1-6 MM',
     image: product1Image,
     alt: 'Rolls and panels of precision welded wire mesh stacked in a warehouse',
   },
@@ -84,7 +84,7 @@ const products = [
     name: 'Barbed Wire',
     description:
       'Reliable boundary fencing manufactured for industrial, agricultural and perimeter applications.',
-    spec: 'GALVANIZED IRON / 4-POINT BARB',
+    spec: 'Inches 12*12 / 12*14 / 14*14 ',
     image: '/e5f3b460-fb51-4a29-80d0-5bea87154874.jpg',
     alt: 'Barbed wire boundary fence strands against a dusk industrial landscape',
   },

@@ -32,7 +32,7 @@ function Navigation() {
       >
         <a href="/" aria-label="Superior Weldmesh home" className="block">
           <img
-            src="/logo-light.webp"
+            src="/logo-light.png"
             alt="Superior Weldmesh"
             className={`w-auto max-w-[58vw] object-contain object-left transition-[height] duration-300 ease-weld ${scrolled ? 'h-8 sm:h-9 lg:h-11' : 'h-10 sm:h-11 lg:h-14'}`}
           />
@@ -143,7 +143,7 @@ function Navigation() {
           >
             <div className="flex items-center justify-between px-5 py-5 sm:px-6 sm:py-6">
               <img
-                src="/logo-light.webp"
+                src="/logo-light.png"
                 alt="Superior Weldmesh"
                 className="h-8 w-auto object-contain object-left"
               />

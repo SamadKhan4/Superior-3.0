@@ -62,7 +62,7 @@ function Footer() {
         <div className="mt-16 grid grid-cols-1 gap-8 border-t border-metal/15 pt-10 md:grid-cols-2">
           <div>
             <img
-              src="/logo-light.webp"
+              src="/logo-light.png"
               alt="Superior Weldmesh"
               className="h-10 w-auto object-contain object-left"
               loading="lazy"

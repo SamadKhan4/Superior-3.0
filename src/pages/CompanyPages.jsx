@@ -117,8 +117,8 @@ const PRODUCT_DETAILS = {
     specs: [
       ['Mesh size', '200 x 50 mm'],
       ['Wire diameter', '4 / 4.5 / 5 mm'],
-      ['Width', '2500 mm'],
-      ['Length', '3000 mm'],
+      ['Width', '1-3 m'],
+      ['Height', '1-6 m'],
       ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
@@ -135,8 +135,8 @@ const PRODUCT_DETAILS = {
     specs: [
       ['Mesh size', '76.20 x 12.70 mm'],
       ['Wire diameter', '3-4 mm'],
-      ['Width', '2500 mm'],
-      ['Length', '3000 mm'],
+      ['Width', '1-3 m'],
+      ['Height', '1-6 m'],
       ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
@@ -185,8 +185,8 @@ const ADDITIONAL_PRODUCT_DETAILS = {
     specs: [
       ['Mesh size', '100 x 50 mm'],
       ['Wire diameter', '4.5-5 mm'],
-      ['Panel width', '2500 mm'],
-      ['Panel length', '3000 mm'],
+      ['Width', '1-3 m'],
+      ['Height', '1-6 m'],
       ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
@@ -201,8 +201,8 @@ const ADDITIONAL_PRODUCT_DETAILS = {
     specs: [
       ['Mesh size', '150 x 50 mm'],
       ['Wire diameter', '5-6 mm'],
-      ['Panel width', '2500 mm'],
-      ['Panel length', '3000 mm'],
+      ['Width', '1-3 m'],
+      ['Height', '1-6 m'],
       ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
