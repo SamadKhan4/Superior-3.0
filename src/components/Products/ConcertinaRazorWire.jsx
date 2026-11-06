@@ -2,13 +2,7 @@ import { useState } from 'react';
 import { CheckCircle2Icon, ChevronDownIcon } from 'lucide-react';
 import razorDiagram from '../../assests/Products/concerntina.png';
 
-const SPECS = [
-  ['Product range', 'BT 10 / BT 22 / BT 28 / BT 30'],
-  ['Wire diameter', 'Not specified in supplied PDF'],
-  ['Width', 'Not specified in supplied PDF'],
-  ['Length', 'Not specified in supplied PDF'],
-  ['IS standard', 'Not specified in supplied PDF'],
-];
+const SPECS = [['Product range', 'BT 10 / BT 22 / BT 28 / BT 30']];
 const APPLICATIONS = [
   [
     'Poultry farms',

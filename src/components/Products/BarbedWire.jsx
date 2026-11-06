@@ -2,13 +2,6 @@ import { useState } from 'react';
 import { CheckCircle2Icon, ChevronDownIcon } from 'lucide-react';
 import barbedWireHero from '../../assets/products/barbed-wire-hero.png';
 
-const SPECS = [
-  ['Mesh size', 'Not specified in supplied PDF'],
-  ['Wire diameter', 'Not specified in supplied PDF'],
-  ['Width', 'Not specified in supplied PDF'],
-  ['Length', 'Not specified in supplied PDF'],
-  ['IS standard', 'Not specified in supplied PDF'],
-];
 const APPLICATIONS = [
   [
     'The military',
@@ -130,33 +123,7 @@ function BarbedWire({ product }) {
           </aside>
         </div>
       </section>
-      <section className="bg-graphite py-20 lg:py-28">
-        <div className="mx-auto grid max-w-shell gap-12 px-6 lg:grid-cols-12 lg:px-10">
-          <div className="lg:col-span-4">
-            <p className="font-mono text-[10px] uppercase tracking-[.22em] text-molten">
-              / Specifications
-            </p>
-            <h2 className="mt-5 font-display text-[clamp(2.8rem,5vw,4.6rem)] font-semibold uppercase leading-[.9] tracking-tightest">
-              Choose the wire pair.
-            </h2>
-          </div>
-          <div className="lg:col-span-8">
-            <dl className="border-t border-metal/20">
-              {SPECS.map(([label, value]) => (
-                <div
-                  key={label}
-                  className="grid grid-cols-1 gap-2 border-b border-metal/20 py-4 text-sm sm:grid-cols-2"
-                >
-                  <dt className="font-mono text-[10px] uppercase tracking-[.14em] text-steel">
-                    {label}
-                  </dt>
-                  <dd className="text-chalk sm:text-right">{value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </section>
+
       <section className="bg-bone py-20 text-ink lg:py-28">
         <div className="mx-auto grid max-w-shell gap-16 px-6 lg:grid-cols-2 lg:px-10">
           <Accordion title="Applications" items={APPLICATIONS} />

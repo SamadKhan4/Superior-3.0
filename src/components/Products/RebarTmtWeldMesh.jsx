@@ -5,8 +5,8 @@ import rebarDiagram from '../../assests/Products/rebar.png';
 const SPECS = [
   ['Mesh size', '50 mm × 300 mm'],
   ['Wire diameter', '6 mm - 12 mm'],
-  ['Width', '3000 mm'],
-  ['Length', '6000 mm'],
+  ['Width', '1 m - 3 m'],
+  ['Length', '1 m - 6 m'],
   ['IS standard', 'IS 4948 & IS 4826'],
 ];
 const APPLICATIONS = [

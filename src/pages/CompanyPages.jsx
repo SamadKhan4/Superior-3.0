@@ -64,13 +64,7 @@ const PRODUCT_DETAILS = {
     intro:
       'Barbed wire uses twisted longitudinal wires with regularly spaced sharp barbs to create an economical and dependable boundary and deterrent system.',
     formats: ['Galvanized iron'],
-    specs: [
-      ['Mesh size', 'Not specified in supplied PDF'],
-      ['Wire diameter', 'Not specified in supplied PDF'],
-      ['Width', 'Not specified in supplied PDF'],
-      ['Length', 'Not specified in supplied PDF'],
-      ['Standard', 'Not specified in supplied PDF'],
-    ],
+    specs: [],
     uses: [
       'Agricultural and commercial land',
       'Highway and railway boundaries',
@@ -96,13 +90,7 @@ const PRODUCT_DETAILS = {
     intro:
       'Concertina and razor wire systems add a high-security deterrent layer to sensitive perimeters, critical infrastructure and restricted facilities.',
     formats: ['Concertina coils', 'Razor wire coils', 'Perimeter topping systems'],
-    specs: [
-      ['Product range', 'BT 10 / BT 22 / BT 28 / BT 30'],
-      ['Wire diameter', 'Not specified in supplied PDF'],
-      ['Width', 'Not specified in supplied PDF'],
-      ['Length', 'Not specified in supplied PDF'],
-      ['Standard', 'Not specified in supplied PDF'],
-    ],
+    specs: [['Product range', 'BT 10 / BT 22 / BT 28 / BT 30']],
     uses: [
       'Critical infrastructure',
       'Industrial compounds',
@@ -136,7 +124,7 @@ const PRODUCT_DETAILS = {
       ['Mesh size', '76.20 x 12.70 mm'],
       ['Wire diameter', '3-4 mm'],
       ['Width', '1-3 m'],
-      ['Height', '1-6 m'],
+      ['Length', '1-6 m'],
       ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: [
@@ -153,8 +141,8 @@ const PRODUCT_DETAILS = {
     specs: [
       ['Mesh size', '50 x 300 mm'],
       ['Wire diameter', '6-12 mm'],
-      ['Width', '3000 mm'],
-      ['Length', '6000 mm'],
+      ['Width', '1-3 m'],
+      ['Length', '1-6 m'],
       ['Standard', 'IS 4948 & IS 4826'],
     ],
     uses: ['Slabs and floors', 'Roads and pavements', 'Precast work', 'Structural construction'],
@@ -278,13 +266,7 @@ const ADDITIONAL_PRODUCT_DETAILS = {
   },
   'knotted-fence': {
     formats: ['High-tensile galvanized wire', 'Graduated aperture mesh', 'Flexible knot joints'],
-    specs: [
-      ['Mesh size', 'Not specified in supplied PDF'],
-      ['Wire diameter', 'Not specified in supplied PDF'],
-      ['Width / height', 'Not specified in supplied PDF'],
-      ['Length', 'Not specified in supplied PDF'],
-      ['Standard', 'Not specified in supplied PDF'],
-    ],
+    specs: [],
     uses: [
       'Livestock containment',
       'Wild-animal and crop protection',
@@ -542,22 +524,26 @@ function ProductDetailPage() {
             </ul>
           </div>
           <aside className="lg:col-span-5">
-            <p className="font-mono text-[10px] uppercase tracking-[.22em] text-molten">
-              / Specifications
-            </p>
-            <dl className="mt-5 border-t border-ink/15">
-              {detail.specs.map(([label, value]) => (
-                <div
-                  key={label}
-                  className="grid grid-cols-2 gap-4 border-b border-ink/15 py-4 text-sm"
-                >
-                  <dt className="font-mono text-[10px] uppercase tracking-[.12em] text-ink/55">
-                    {label}
-                  </dt>
-                  <dd className="text-right font-medium">{value}</dd>
-                </div>
-              ))}
-            </dl>
+            {detail.specs.length > 0 && (
+              <>
+                <p className="font-mono text-[10px] uppercase tracking-[.22em] text-molten">
+                  / Specifications
+                </p>
+                <dl className="mt-5 border-t border-ink/15">
+                  {detail.specs.map(([label, value]) => (
+                    <div
+                      key={label}
+                      className="grid grid-cols-2 gap-4 border-b border-ink/15 py-4 text-sm"
+                    >
+                      <dt className="font-mono text-[10px] uppercase tracking-[.12em] text-ink/55">
+                        {label}
+                      </dt>
+                      <dd className="text-right font-medium">{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </>
+            )}
             <a
               href="#enquiry"
               className="mt-8 inline-flex items-center gap-2 bg-molten px-5 py-4 font-mono text-[10px] uppercase tracking-[.16em] text-ink"

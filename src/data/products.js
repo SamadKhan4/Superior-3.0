@@ -1,11 +1,9 @@
 import product1Image from '../assests/changed product image/1.png';
-import product9Image from '../assests/changed product image/9.png';
 import product10Image from '../assests/changed product image/10.png';
 import product11Image from '../assests/changed product image/11.png';
 import product13Image from '../assests/changed product image/13.png';
 import product14Image from '../assests/changed product image/14.png';
 import product16Image from '../assests/changed product image/16.png';
-import product19Image from '../assests/changed product image/19.png';
 
 const products = [
   {
@@ -95,7 +93,7 @@ const products = [
     description:
       'Portable galvanized mesh barricading systems designed for construction sites, events, crowd control and temporary site protection.',
     spec: '100 x 50 MM / WIRE 4-5 MM',
-    image: product9Image,
+    image: '/Temporary-Barricades.png',
     alt: 'Portable galvanized mesh barricade panels lined up at a construction site',
   },
   {
@@ -195,7 +193,7 @@ const products = [
     description:
       'Multi-cell welded-mesh and geotextile barriers for flood control, fortification and critical infrastructure protection.',
     spec: '50 / 75 MM / WIRE 4-5 MM',
-    image: product19Image,
+    image: '/Rapid-Deployment-Barriers.png',
     alt: 'Welded mesh defensive barrier filled for flood and perimeter protection',
   },
 ];
